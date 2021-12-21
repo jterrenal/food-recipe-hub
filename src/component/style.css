@@ -1,0 +1,166 @@
+.header {
+	height: 25%;
+
+	padding: 10px;
+	background-image: linear-gradient(
+		to right top,
+		#9ca0f8,
+		#9fa8f8,
+		#a3aff7,
+		#a7b6f6,
+		#adbdf4
+	);
+}
+
+.container {
+	width: 100%;
+	text-align: center;
+}
+
+.header-content {
+	margin-bottom: 15px;
+	font-size: 1.5rem;
+}
+
+.header .emoji {
+	font-size: 2.5rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group button {
+	padding: 10px;
+	border-radius: 10px;
+	margin: 5px 10px;
+	background-color: #fff;
+	border: none;
+}
+
+.form-group button {
+	padding: 10px 20px;
+	background: #dda0dd;
+	border: none;
+}
+
+.form-group button:hover {
+	opacity: 0.9;
+}
+
+.form-group select {
+	width: 150px;
+}
+
+.recipeSection {
+	max-width: 1200px;
+	overflow: hidden;
+	margin: auto;
+	margin-top: 10px;
+	min-height: 90vh;
+	position: relative;
+}
+
+.recipe-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1.5rem;
+	padding: 20px;
+}
+
+.recipe-container .card {
+	position: relative;
+	padding: 10px 0;
+	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+	transition: 0.3s;
+}
+
+.recipe-container .card img {
+	width: 100%;
+
+	padding: 20px;
+}
+
+.recipe-container h3 {
+}
+
+.footer {
+	bottom: 0;
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+	height: 120px;
+}
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 80px;
+	background-image: linear-gradient(
+		to right top,
+		#9ca0f8,
+		#9fa8f8,
+		#a3aff7,
+		#a7b6f6,
+		#adbdf4
+	);
+}
+
+.footer a {
+	color: #fff;
+}
+
+.footer .social > * {
+	padding: 15px;
+}
+
+.footer a:hover {
+	color: #77b5fe;
+}
+
+.footer p {
+	margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+	.header .form-group {
+		display: flex;
+		flex-direction: row;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.header h2 {
+		font-size: 1.5rem;
+	}
+
+	.header .form-group {
+		display: grid;
+		grid-template-rows: repeat(3, 1fr);
+	}
+
+	.header input,
+	.header button,
+	.header select {
+		margin: 5px 0;
+		padding: 5px;
+	}
+
+	.header select {
+		width: 100%;
+	}
+
+	.recipe-container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	@media (max-width: 600px) {
+		.recipe-container {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+}
